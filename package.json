@@ -1,0 +1,18 @@
+{
+  "name": "wacomslate",
+  "version": "1.0.0",
+  "description": "This is a ionic cordova plugin which is related to the Wacom BAMBOO Slate Smartpad.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Wacom",
+    "Slate",
+    "Smartpad",
+    "Ionic",
+    "Plugin"
+  ],
+  "author": "Praveen Chamal",
+  "license": "ISC"
+}
