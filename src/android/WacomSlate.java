@@ -54,10 +54,6 @@ public class WacomSlate extends CordovaPlugin {
 
         Context context = cordova.getActivity().getApplicationContext();
         getInkDevice();
-        createInkDeviceClient(InkDeviceInfo inkDeviceInfo);
-        switchActivityContext(Context activityContext);
-        subscribeForAlerts(final Context activityContext);
-        subscribeForEvents(Context activityContext);
       }
 
         //region Getters and Setters
@@ -192,7 +188,7 @@ public class WacomSlate extends CordovaPlugin {
         if (action.equals("start")) {
             String message = args.getString(0);
             callbackContext.success(message);
-            System.out.println("start method called")
+            System.out.println("start method called");
             return true;
         }
         return false;
