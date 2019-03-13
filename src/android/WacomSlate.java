@@ -53,7 +53,21 @@ public class WacomSlate extends CordovaPlugin {
         this.web = webView;
 
         Context context = cordova.getActivity().getApplicationContext();
-        getInkDevice();
+        RectF rectFT_8X5 = new RectF(
+                2651 , 458,
+                4646 , 3058);
+
+        PointF[] calScreenPoint = new PointF[4];
+        PointF[] calResultPoint = new PointF[4];
+        calResultPoint[0] = new PointF(rectFT_8X5.left, rectFT_8X5.top);
+        calResultPoint[1] = new PointF(rectFT_8X5.right, rectFT_8X5.top);
+        calResultPoint[2] = new PointF(rectFT_8X5.right ,rectFT_8X5.bottom);
+        calResultPoint[3] = new PointF(rectFT_8X5.left ,rectFT_8X5.bottom);
+
+        calScreenPoint[0] = new PointF(0.0f ,0.0f);
+        calScreenPoint[1] = new PointF(300.0f ,0.0f);
+        calScreenPoint[2] = new PointF(300.0f ,400.0f);
+        calScreenPoint[3] = new PointF(0.0f ,400.0f);
       }
 
     @Override
