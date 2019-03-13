@@ -6,6 +6,15 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.widget.Toast;
+import android.annotation.SuppressLint;
+import android.graphics.Point;
+import android.graphics.PointF;
+import android.graphics.RectF;
+import android.os.Handler;
+import android.os.Message;
+import android.view.View;
+import android.view.WindowManager;
+
 
 import com.wacom.bootstrap.lib.InvalidLicenseException;
 import com.wacom.cdl.callbacks.AlertsCallback;
